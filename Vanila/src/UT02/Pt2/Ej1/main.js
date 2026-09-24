@@ -1,6 +1,6 @@
 "use strict";
 
-import { mostrarMes } from "../../Biblioteca/p2ej1.js";
+import { mostrarMes } from "../../Biblioteca/Pt2/p2ej1.js";
 
 console.log(mostrarMes(1));
 console.log(mostrarMes(12));

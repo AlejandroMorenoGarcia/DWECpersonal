@@ -1,6 +1,6 @@
 "use strict";
 
-import { calcularMedia, mediaMasAlta } from "../../Biblioteca/p1ej2.js";
+import { calcularMedia, mediaMasAlta } from "../../Biblioteca/Pt1/p1ej2.js";
 
 let juan = calcularMedia(89,120,103);
 let miguel = calcularMedia(116,94,123);

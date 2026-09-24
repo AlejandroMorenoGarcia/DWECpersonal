@@ -1,6 +1,6 @@
 "use strict";
 
-import { analisisNumerico } from "../../Biblioteca/p2ej2.js";
+import { analisisNumerico } from "../../Biblioteca/Pt2/p2ej2.js";
 
 
 console.log(analisisNumerico(3));

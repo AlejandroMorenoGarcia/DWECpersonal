@@ -1,6 +1,6 @@
 "use strict";
 
-import { mostrarProductoConImpuesto } from "../../Biblioteca/p1ej4.js";
+import { mostrarProductoConImpuesto } from "../../Biblioteca/Pt1/p1ej4.js";
 
 mostrarProductoConImpuesto()
 mostrarProductoConImpuesto("Pepinillos")

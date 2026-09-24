@@ -1,5 +1,5 @@
 "use strict";
 
-import {  } from "../../Biblioteca/p2ej6.js";
+import {  } from "../../Biblioteca/Pt2/p2ej6.js";
 
 

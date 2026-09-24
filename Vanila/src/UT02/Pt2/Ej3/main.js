@@ -1,6 +1,6 @@
 "use strict";
 
-import { multiplosDeTres } from "../../Biblioteca/p2ej3.js";
+import { multiplosDeTres } from "../../Biblioteca/Pt2/p2ej3.js";
 
 console.log(multiplosDeTres(10));
 console.log(multiplosDeTres(30));
