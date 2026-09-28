@@ -1,6 +1,6 @@
 "use strict";
 
-function mostrarMultiplos(cantidad, multiplo) {
+const mostrarMultiplos = (cantidad, multiplo) => {
     let solucion = "";
     for (let i = 0; i < cantidad; i++) {
         solucion += `${multiplo} `

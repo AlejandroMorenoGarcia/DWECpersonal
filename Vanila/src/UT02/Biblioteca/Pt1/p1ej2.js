@@ -1,6 +1,6 @@
 "use strict";
 
-function calcularMedia(){
+const calcularMedia = () => {
     let suma = 0;
     for (let i = 0; i < arguments.length; i++) {
         suma += arguments[i];
@@ -8,7 +8,7 @@ function calcularMedia(){
     return suma/arguments.length;
 }
 
-function mediaMasAlta() {
+const mediaMasAlta = () => {
     let masAlta = 0;
     for (let i = 0; i < arguments.length; i++) {
         if (arguments[i] > masAlta){
