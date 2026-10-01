@@ -1,12 +1,11 @@
 "use strict";
 
-const sumandoRest = (...parametros) =>{
-    if (parametros.some((v,i,a) => isNaN(v))){
-        return `¿Como quieres que sume algo que no es un numero?????????????`;
-    }else{
-        let salida = parametros.reduce((p,v,i,a) => p + v);
-        return `Resualtado de la suma: ${salida}`;
-    }
+const sonEnteros = (num) => {
+    return Array.isArray(num) ? num.every((v,i,a) => !isNaN(v)) : !isNaN(num) ?? false;
+}
+
+const sumandoRest = (...numeros) =>{
+    return sonEnteros(numeros) ? numeros.reduce((p,v,i,a) => p + v) : `¿Como quieres que sume algo que no es un numero?`;
 };
 
-export {sumandoRest};
+export {sumandoRest, sonEnteros};

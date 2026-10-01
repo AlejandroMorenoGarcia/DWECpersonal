@@ -1,29 +1,22 @@
 "use strict";
 
-const tablas = (multiplo, funcion) =>{
-    if (isNaN(multiplo) || multiplo < 2){
-        return `No es un numero o es menor a 2`;
-    } else {
-        //if ( multiplo === 2){
-        //    console.log(funcion(multiplo));
-        //} else {
-        //    console.log(funcion(multiplo));
-        //    tablas(--multiplo, funcion);
-        //}
+import { sonEnteros } from "./ej1.js";
 
-        console.log(funcion(multiplo,1,2,3,4,5,6,7,8,9,10));
+const tablas = (multiplo, funcion) =>{
+    if (!sonEnteros(multiplo) || multiplo < 2){
+        console.error(`No es un numero o es menor a 2`);
+    } else {
+        console.log(funcion(multiplo));
         multiplo != 2 ? tablas(--multiplo, funcion) : "";
     }
 };
 
-const multiplicar = (multiplo,...multiplicadores) => {
+const multiplicar = (multiplo) => {
     let salida = `Tabla del ${multiplo}:\n`
-    multiplicadores.map((v) => {
-        salida = salida.concat(`${multiplo} * ${v} = ${v*multiplo}\n`)
-    });
-    
+    for (let i = 0; i <= 10; i++) {
+        salida = salida.concat(`${multiplo} * ${i} = ${i*multiplo}\n`)
+    }
     return salida
-    
 };
 
 export {tablas, multiplicar}
