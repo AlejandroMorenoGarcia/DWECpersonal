@@ -11,9 +11,9 @@ const temporizador = (minutos, segundos) => {
             if (segundos === 0 && minutos === 0) {
                 console.log("Se acabo el tiempo");
             } else if (segundos === 0) {
-                setTimeout(temporizador(minutos - 1, 59), 1000);
+                const restarMinuto = setTimeout(() => {temporizador(minutos - 1, 59)}, 1000);
             } else {
-                setTimeout(temporizador(minutos, segundos - 1), 1000);
+                const restarSegundo = setTimeout(() => {temporizador(minutos, segundos - 1)}, 1000);
             }
         }
     }
