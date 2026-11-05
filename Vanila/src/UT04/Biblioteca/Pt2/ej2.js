@@ -1,7 +1,6 @@
 "use strict";
 import { esPrimo } from "../../../UT02/Biblioteca/Pt2/p2ej2.js";
 
-
 const generarTabla = () => {
     document.body.insertAdjacentHTML("beforeend",`<table id="tabla" border="1"></table>`)
     let tabla = document.getElementById("tabla");
@@ -15,15 +14,13 @@ const generarTabla = () => {
 }
 
 const numerosPrimos = () => {
-    let valores = Array.from(document.getElementsByTagName("td"));
+    //let valores = Array.from(document.getElementById("tabla").getElementsByTagName("td"));
+    let valores = [...document.getElementById("tabla").getElementsByTagName("td")];
     valores.map((v) => {
-        console.log(v)
         if (esPrimo(parseInt(v["innerText"]))){
-
-            v["innerHTML"] = v.textContent.replace(v["innerHTML"], `<span id="rojo">${v["innerHTML"]}</span>`)
+            v.setAttribute("class","rojo")
         }
     })
-    parseInt(valores[0]["innerHTML"]);
 
 }
 

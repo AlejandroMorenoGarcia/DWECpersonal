@@ -1,7 +1,7 @@
 "use strict";
 
-import {  } from "../../Biblioteca/Pt2/ej3.js";
+import { cambiarParrafoAleatorio } from "../../Biblioteca/Pt2/ej3.js";
 
-const timeout = setTimeout(() => {
-
+const intervalo = setInterval(() => {
+    cambiarParrafoAleatorio();
 },2000);
