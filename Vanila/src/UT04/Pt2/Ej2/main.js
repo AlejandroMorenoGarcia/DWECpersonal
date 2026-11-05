@@ -1,7 +1,8 @@
 "use strict";
 
-import { generarTabla } from "../../Biblioteca/Pt2/ej2.js";
+import { generarTabla, numerosPrimos } from "../../Biblioteca/Pt2/ej2.js";
 
+generarTabla();
 const timeout = setTimeout(() => {
-    generarTabla();
+    numerosPrimos();
 },2000);

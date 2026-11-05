@@ -27,4 +27,4 @@ const analisisNumerico = (numero) => {
     return `${numero} --> Es Par: ${esPar(numero)} | Es Positivo: ${esPositivo(numero)} | Es Primo: ${esPrimo(numero)}`;
 };
 
-export {analisisNumerico}
+export {analisisNumerico, esPrimo}
