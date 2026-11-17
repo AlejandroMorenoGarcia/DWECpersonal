@@ -1,4 +1,6 @@
 "use strict";
 
-import {  } from "../../Biblioteca/Pt3/ej1.js";
+import { borrarEjemplos, addOnClicks } from "../Biblioteca/Pt3/ej1.js";
 
+borrarEjemplos();
+addOnClicks();
